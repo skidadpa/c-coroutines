@@ -114,6 +114,6 @@ coded versions like this:
 
 Lately I have been using the Creative Commons Zero 1.0 Universal license
 for most of my work, although Simon Tatham used the MIT license for his
-implementation so I am using that license here. Even though these are
-complete reimplementations that don't share any of his code, they are at
-least spiritual successors so he should be given credit.
+implementation so I am using that license and including his copyright
+notice. Although these are complete reimplementations that don't share
+any code, they are at least spiritual successors.

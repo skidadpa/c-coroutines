@@ -1,7 +1,7 @@
 MIT License
 
 Copyright (c) 2026 Gerald Williams
-The original coroutine.h is copyright 1995,2000 Simon Tatham.
+Original coroutine implementation is copyright 1995,2000 Simon Tatham.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

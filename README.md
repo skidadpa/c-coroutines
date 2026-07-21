@@ -10,7 +10,6 @@ Device, a trick Tom Duff (pretty sure he was at Bell Labs at the time) used to
 implement loop unrolling. Here is the essence of Duff's Device, reformatted a
 bit to (hopefully) better highlight the code flow:
 
-```
 		        n = (count + 7) / 8;
 
 		switch (count % 8)
@@ -29,13 +28,12 @@ bit to (hopefully) better highlight the code flow:
                 }
                 while (--n > 0);
 		}
-```
 
 This unrolls `do { *REG = *src++; } while (--count > 0);` by a factor of 8,
 using a switch to start at an offset in the do loop body when count is not
-divisible by 8 rather than duplicating the loop body outside of the loop.
-This is a common practice in assembly language, but isn't something you
-generally see in higher-order languages.
+divisible by 8 rather than duplicating part of the loop body outside of the
+loop. This is a common practice in assembly language, but isn't something
+you generally see in higher-order languages.
 
 Simon Tatham, well known for other projects (most notably PuTTY, although I
 am a fan of his GUI puzzle games and lots of folks will recognize him as the
@@ -69,3 +67,5 @@ Simon's version but with many changes, some trivial, some less so:
 
 I have experimented with several different implementations of this coroutine
 device, a few of which will be published in this repository.
+
+MIT license

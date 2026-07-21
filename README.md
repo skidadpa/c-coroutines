@@ -42,10 +42,10 @@ that implement coroutines. At the time of creation of this repository, lots
 of information about the man and his projects (including work on coroutines)
 was available at https://www.chiark.greenend.org.uk/~sgtatham/
 
-His coroutine macros combine this trick with another: using __LINE__ to save
-and restore the current context, so that a single macro can return a value
-and identify where the coroutine should continue when called again, without
-needing to provide an explicit switch/case target.
+His coroutine macros combine this trick with another: using `__LINE__` to
+save and restore the current context, so that a single macro can return a
+value and identify where the coroutine should continue when called again,
+without needing to provide an explicit switch/case target.
 
 Simon's original coroutine.h supports two styles of coroutines: one limited
 to only static context (which does not reset the saved line number so only

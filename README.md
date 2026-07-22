@@ -83,7 +83,8 @@ coded versions like this:
 
         int one_to_ten(struct ctx *context)
         {
-            switch (context->state) {
+            switch (context->state)
+            {
             case START:
                 for (context->value = 1; context->value < 10; ++context->value)
                 {
